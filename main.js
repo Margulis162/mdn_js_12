@@ -8,3 +8,9 @@ document.querySelector('#generate').addEventListener('click', () => {
         quota,
     });
 });
+
+hardworker.addEventListener("message", (message) => {
+    document.querySelector(
+        "#output", 
+    ).textContent = `Finished generating ${message.data} primes!`;
+})
