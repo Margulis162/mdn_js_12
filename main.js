@@ -14,3 +14,9 @@ hardworker.addEventListener("message", (message) => {
         "#output", 
     ).textContent = `Finished generating ${message.data} primes!`;
 })
+
+document.querySelector("#reload").addEventListener("click", () => {
+    document.querySelector("#user-input").value = 
+    'Try typing in here while primes are being generated';
+    document.location.reload();
+})
